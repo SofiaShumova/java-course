@@ -1,10 +1,11 @@
 package com.company.entities;
 
 import com.company.entities.Employee;
+import com.company.lab.abstractInterface.ITeacher;
 
 import java.util.Date;
 
-public class Teacher extends Employee {
+public class Teacher extends Employee implements ITeacher {
     private String specialty;
     private String department;
     private String faculty;
@@ -18,6 +19,11 @@ public class Teacher extends Employee {
         setFaculty(faculty);
         setSpecialty(specialty);
     }
+
+    public Teacher() {
+        super();
+    }
+
     public String getSpecialty(){
         return specialty;
     }

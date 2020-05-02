@@ -18,6 +18,10 @@ public class Employee extends Person {
         setHigherEducation(isHigherEducation);
     }
 
+    public Employee() {
+
+    }
+
     public int getExperience(){
         return experience;
     }

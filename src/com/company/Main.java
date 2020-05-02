@@ -10,5 +10,8 @@ public class Main {
             Person p = factory.getCurrentPerson(type, "Sofia", "Shumova");
             System.out.println(p.toString());
             System.out.println(p.getClass().getName());
+
+            AbstractFactory abstractFactory = new AbstractFactory();
+            abstractFactory.Test();
     }
 }

@@ -17,6 +17,10 @@ public class Person {
         setDateBirthday(dateBirthday);
     }
 
+    public Person() {
+
+    }
+
     public String getLastName(){
         return lastName;
     }

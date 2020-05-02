@@ -1,10 +1,11 @@
 package com.company.entities;
 
 import com.company.entities.Employee;
+import com.company.lab.abstractInterface.IWorker;
 
 import java.util.Date;
 
-public class Worker extends Employee {
+public class Worker extends Employee implements IWorker {
     private  String workDepartment;
     private String position;
 
@@ -17,6 +18,10 @@ public class Worker extends Employee {
         super(firstName, lastName, dateBirthday, wage, experience, isHigherEducation);
         setWorkDepartment(workDepartment);
         setPosition(position);
+    }
+
+    public Worker() {
+
     }
 
     public void setPosition(String position){

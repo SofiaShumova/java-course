@@ -1,5 +1,6 @@
 package com.company;
 
+import com.SortingStudents;
 import com.company.entities.Student;
 
 import java.io.FileWriter;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-
+        SortingStudents.SortingStudent("out.txt", System.out);
     }
 
     public static ArrayList<Student> getListStudent() {

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ModuleSorting/ModuleSorting.iml" filepath="$PROJECT_DIR$/ModuleSorting/ModuleSorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/git-java.iml" filepath="$PROJECT_DIR$/git-java.iml" />
     </modules>
   </component>

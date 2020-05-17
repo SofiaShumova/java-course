@@ -1,0 +1,3 @@
+module ModuleSorting {
+    exports com;
+}

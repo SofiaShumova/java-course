@@ -1,11 +1,10 @@
 package com.company.entities;
 
 import com.company.entities.Person;
-import com.company.lab.abstractInterface.IStudent;
 
 import java.util.Date;
 
-public class Student extends Person implements IStudent{
+public class Student extends Person {
     private static int counter;
     private int numberGroup;
     private int numberID;
@@ -25,11 +24,6 @@ public class Student extends Person implements IStudent{
         setNumberGroup(numberGroup);
         setNumberID();
     }
-
-    public Student() {
-        super();
-    }
-
     public int getNumberGroup(){
         return numberGroup;
     }
@@ -51,8 +45,6 @@ public class Student extends Person implements IStudent{
         specialty=name;
     }
     public String toString(){
-        return getNumberID() +" "+getFirstName()+" "+ getLastName()+" "+getNumberGroup();
+        return getFirstName()+" "+ getLastName()+" "+getNumberID();
     }
-
-
 }

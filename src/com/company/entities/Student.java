@@ -13,17 +13,19 @@ public class Student extends Person {
 
     public Student(String firstName, String lastName) {
         super(firstName, lastName);
+        //setNumberGroup(num);
         setNumberID();
     }
     public Student(String firstName, String lastName, Date dateBirth) {
         super(firstName, lastName, dateBirth);
         setNumberID();
     }
-    public Student(String firstName, String lastName, int numberGroup ) {
+    public Student(String firstName, String lastName, int num) {
         super(firstName, lastName);
-        setNumberGroup(numberGroup);
+        setNumberGroup(num);
         setNumberID();
     }
+
     public int getNumberGroup(){
         return numberGroup;
     }
@@ -45,6 +47,6 @@ public class Student extends Person {
         specialty=name;
     }
     public String toString(){
-        return getFirstName()+" "+ getLastName()+" "+getNumberID();
+        return getFirstName()+" "+ getLastName()+" "+getNumberGroup();
     }
 }

@@ -1,6 +1,7 @@
 package com.company;
 
-import com.SortingStudents;
+import appfunc.MainSort;
+import com.company.entities.Person;
 import com.company.entities.Student;
 
 import java.io.FileWriter;
@@ -11,33 +12,11 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-            String type = "Student";
-            Factory factory = new Factory();
-            Person p = factory.getCurrentPerson(type, "Sofia", "Shumova");
-            System.out.println(p.toString());
-            System.out.println(p.getClass().getName());
 
-            AbstractFactory abstractFactory = new AbstractFactory();
-            abstractFactory.Test();
-=======
-        SortingStudents.SortingStudent("out.txt", System.out);
+        WriteFile(getListStudent(), "out.txt", System.out);
+        MainSort.SortStudent("out.txt", System.out);
     }
-
-    public static ArrayList<Student> getListStudent() {
-        ArrayList<Student> students = new ArrayList<Student>();
-        students.add(new Student("Sofia", "Shumova", 744));
-        students.add(new Student("Carl", "Durham", 687));
-        students.add(new Student("Lawrence", "Meyers", 765));
-        students.add(new Student("Wade", "Weeks", 744));
-        students.add(new Student("Yvette", "Velasquez", 652));
-        students.add(new Student("Samson", "Good", 765));
-        students.add(new Student("Ulric", "Glover", 873));
-        students.add(new Student("Elizabeth", "Mikhaleva", 744));
-        return students;
-    }
-    public static void WriteFile(String nameFile, PrintStream pw){
-        ArrayList<Student> array = getListStudent();
+    public static void WriteFile(ArrayList<Student> array, String nameFile, PrintStream pw){
         try {
             FileWriter fw = new FileWriter(nameFile);
             for(int i =0; i<array.size(); i++){
@@ -49,6 +28,17 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
->>>>>>> lab11
+    }
+    public static ArrayList<Student> getListStudent() {
+        ArrayList<Student> students = new ArrayList<Student>();
+        students.add(new Student("Sofia", "Shumova", 744));
+        students.add(new Student("Carl", "Durham", 687));
+        students.add(new Student("Lawrence", "Meyers", 765));
+        students.add(new Student("Wade", "Weeks", 744));
+        students.add(new Student("Yvette", "Velasquez", 652));
+        students.add(new Student("Samson", "Good", 765));
+        students.add(new Student("Ulric", "Glover", 873));
+        students.add(new Student("Elizabeth", "Mikhaleva", 744));
+        return students;
     }
 }

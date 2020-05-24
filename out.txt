@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Sofia Shumova 0
 Carl Durham 1
 Lawrence Meyers 2
@@ -6,3 +7,13 @@ Yvette Velasquez 4
 Samson Good 5
 Ulric Glover 6
 Mikhaleva Elizabeth 7
+=======
+Sofia Shumova 744
+Carl Durham 687
+Lawrence Meyers 765
+Wade Weeks 744
+Yvette Velasquez 652
+Samson Good 765
+Ulric Glover 873
+Elizabeth Mikhaleva 744
+>>>>>>> lab11_3
